@@ -1,0 +1,495 @@
+/*<!--... - 767px - obsługa dla nowszych telefonów i starszych tabletów,
+768px - 1199px - obsługa dla tabletów i starszych komputerów,
+1200px - ... - obsługa nowych komputerów. --> */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap" rel="stylesheet">');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Miltonian');
+
+ *{
+	box-sizing: border-box;
+	/*border: 1px solid red; */
+    padding: 0; 
+    margin: 0;
+} 
+.flexbox {
+	display: -webkit-flex;
+	display: flex; 
+}
+.row::before,
+.row::after {
+	content:"";
+	display: table ;
+	clear: both;
+ }
+ 
+ [class*="col-"] {
+    float: left; 
+ 	min-height: 1px;
+ }
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.col-offset-0 {margin-left: 0;}
+.col-offset-1 {margin-left: 8.33%;}
+.col-offset-2 {margin-left: 16.66%;}
+.col-offset-3 {margin-left: 25%;}
+.col-offset-4 {margin-left: 33.33%;}
+.col-offset-5 {margin-left: 41.66%;}
+.col-offset-6 {margin-left: 50%;}
+.col-offset-7 {margin-left: 58.33%;}
+.col-offset-8 {margin-left: 66.66%;}
+.col-offset-9 {margin-left: 75%;}
+.col-offset-10 {margin-left: 83.33%;}
+.col-offset-11 {margin-left: 91.66%;}
+
+.container {
+	width: 100vw;
+	/* max-width: 1200px;*/
+	margin: 0 auto;
+	text-align: center;
+} 
+ a {
+ 	color: black;
+ }
+.clearfix {
+		overflow: auto;
+}
+/*.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+} */
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Montserrat; 
+}
+hr.beautiful-line{
+    border-top: 1px solid #999; 
+  	width: 30%;
+}
+header {
+	background-color: #313234; 
+	opacity: 0.9;
+	position: fixed; 
+	height: 45px;
+	z-index: 99998;
+}
+.handle {
+	display: none;
+}
+nav> span {
+	padding-right: 5px;
+	color: #B0E0E6; 
+	float: left;
+	font-family: 'Chelsea Market', cursive;
+	font-size: 28px;
+	margin-left: 20px;
+	margin-top: 3px;
+}
+
+/*section>.container {    
+	/*margin: 20px auto; 
+} */
+
+nav> ul {
+	float: right;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px; 
+}
+
+nav> ul li {
+	display: inline;
+	text-decoration: none;
+	padding: 0 15px;
+	color: #fff;
+} 
+
+
+nav a {
+	color: #fff; 
+	text-decoration: none; /* sciaga podkreslenia*/
+	text-transform: uppercase;
+}
+
+nav a:hover {
+	color: #808080;
+	text-decoration: none;
+}
+ 
+.zadzwon {
+	color: #B0E0E6;
+}
+.hero {
+	width: 100%;
+    height: 100vh;
+    background-image: url(IMG_5267.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+.slogan {
+	margin-top: 450px;
+	padding-left: 10px;
+	background-color: rgba(49,50,52,0.4);
+	max-width: 40%;
+	height: 25vh;
+	font-weight: bold;
+	color: #FFFACD;
+	font-size: 25px;
+ 	float: right; 
+    justify-content: center;
+ 	-webkit-justify-content: center;
+ 	align-items: center;
+ 	-webkit-align-items: center;
+ 	padding: 6px;
+ 	text-align: center;
+}
+
+.portret {
+	width: 80%;
+    height: 60vh;
+	background-image: url(IMG_KASIA.jpg); 
+	border-radius: 50%;
+	background-size: cover;
+    background-position: center;
+    margin: 0 auto; 	
+}
+.opis {
+	width: 80%;
+    height: 60vh;
+	margin: 0 auto;
+	padding: 10px;
+	text-align: justify;
+	font-size: 18px;
+}
+
+.kwadrat {
+	border: 3px solid  #313234; 
+	height: 200px;
+	width: 200px; 
+} 
+.test {
+	justify-content: center;
+ 	-webkit-justify-content: center;
+}
+.OMNIE h2 {
+	text-align: center;
+}
+
+.telefon span {
+	color: 	#FFB6C1; 
+}
+
+.footer [class*="col"] {
+	padding: 45px;
+	text-align: left;
+}
+
+.footer {
+	background-color: #313234;
+	color: white;
+	font-size: 18px;
+}
+
+.footer>.container { 
+	margin-bottom: 0;
+}
+
+.footer a {
+	color: white;
+}
+.copyrights {
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin: none;
+	padding: 10px;
+}
+.copyrights a {
+	text-decoration: none;
+	color: white;
+}
+.copyrights a:hover {
+	color: #808080;
+}
+
+
+h1, h2 {
+	font-family: 'Roboto Condensed', sans-serif; 
+	font-size: 25px;
+}
+
+
+.WHY {
+	text-align: center;
+}
+.STACK {
+	text-align: center;
+}
+.footer i {
+	margin-left: 15px;
+}
+.footer button i{
+	margin-left: 0px;
+}
+.miasta {
+	color: #B0E0E6;
+}
+.dane {
+	color:#fff3b2;
+}
+
+
+@media(min-width: 768px) and (max-width: 1199px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+    
+   
+
+    .slogan {
+		width: 50%;
+		height: 30vh;
+		text-align: center;
+		object-fit: cover; 
+	}
+	.footer h2::after {
+	content:"";
+	}
+}
+
+@media(min-width: 416px) and (max-width: 767px) {
+	[class*="col-"] {
+   		width: 100%;
+	}
+	.flexbox {
+		flex-direction: column;
+		justify-content: center;
+ 		-webkit-justify-content: center;
+ 		align-items: center;
+ 		-webkit-align-items: center;
+ 		margin-bottom: 30px; 
+	}
+	.handle {
+		display: inline-block; 
+		margin-right: 15px;
+		margin-top: 12px;
+		
+		float: right;
+		color: white;
+	} 
+	header {
+		height: 45px;
+		opacity: 0.9;
+	}
+	nav> span {
+		display: block-inline; 
+		float: none;
+		font-size: 22px;
+	} 
+	nav {
+		height: 45px;
+	}
+	header nav ul {
+		list-style-type: none; 
+		float: none;
+		margin: 0;
+		padding: 0;
+		display: none;
+ 	}
+
+ 	header nav ul.open {
+		list-style-type: none; 
+		float: none;
+		padding: none;
+		margin-top: 5px;
+		display: block;
+		background-color: grey;
+		width: 100vw;
+		font-size: 24px;
+ 	}
+	header nav ul li {
+		display: block;
+		text-decoration: none;
+		padding: 5px;
+		background-color: grey;
+	}
+	.hero {
+		width: 100%;
+		height: 350px;
+		object-fit: cover; 
+	} 
+
+	.slogan {
+		width: 60%; 
+		height: 30%; 
+		font-weight: bold;
+		color: #fff;
+		font-size: 12px;
+		text-align: center;
+		margin-top: 200px;
+	} 
+
+	.slogan h3 {
+		font-size: 16px;
+	}
+	
+	.portret {
+		width: 85%;
+	    height: 50vh;
+		background-image: url(IMG_KASIA.jpg); 
+		border-radius: 3%;
+		background-size: cover;
+	    background-position: center; 
+	    margin: 0 auto; 
+	}
+
+
+	.opis {
+		width: 85%;
+	    height: 50vh;
+		margin: 0 auto;
+		text-align: justify;
+		font-size: 17px;
+	}
+	.item {
+	 	font-size: 19px;
+	}
+	.footer i {
+		margin-left: 10px;
+	}
+}  
+@media(max-width: 415px) {	  
+	[class*="col-"] {
+   		width: 100%;
+	}
+	.flexbox {
+		flex-direction: column;
+		justify-content: center;
+ 		-webkit-justify-content: center;
+ 		align-items: center;
+ 		-webkit-align-items: center;
+ 		margin-bottom: 30px; 
+	}
+	.handle {
+		display: none; 
+	} 
+	header {
+		height: 40px;
+		opacity: 0.9;
+	}
+	header nav {
+		height: 40px;
+	}
+	header nav span {
+		display: block-inline; 
+		float: none;
+		padding-top: 6px;
+		font-size: 18px;
+		height: 40px;
+	} 
+	header nav ul {
+		list-style-type: none; 
+		float: none;
+		margin: 0;
+		padding: 0;
+		display: none;
+ 	}
+
+ 	header nav ul.open {
+		list-style-type: none; 
+		float: none;
+		margin-top: 12px;
+		padding: 0;
+		display: block;
+		width: 100%;
+		background-color: grey;
+	}
+	header nav ul li {
+		display: block;
+		text-decoration: none;
+		padding: 5px;
+		width: 100%;
+		background-color: grey; 
+	}
+	 .hero {
+		width: 100%;
+		height: 350px;
+		object-fit: cover; 
+	 } 
+	 .slogan {
+		width: 60%; 
+		height: 30%; 
+		font-weight: bold;
+		color: #fff;
+		font-size: 12px;
+		text-align: center;
+		margin-top: 200px;
+	} 
+	.slogan h3 {
+		font-size: 12px;
+	}
+	.maszyna h1 {
+		margin: 7px;
+	}
+	.OMNIE h1 {
+		margin-right: 5px;
+		margin-left: 5px;
+	}
+	.portret {
+		width: 78%;
+	    height: 45vh;
+	    padding-top: 40px;
+		background-image: url(IMG_KASIA.jpg); 
+		border-radius: 50%;
+		background-size: cover;
+	    background-position: center; 
+	    margin: 0 auto; 
+	    z-index: 99999;
+	}
+	.opis {
+		width: 90%;
+	    height: 100vh;
+		margin: 0 auto;
+		text-align: justify;
+		font-size: 17px;
+		z-index: 99999;
+	}
+	.item {
+	 	font-size: 15px;
+	}
+	.footer i {
+		margin-left: 6px;
+	}
+	.footer [class*="col"] {
+	padding: 15px;
+	text-align: left;
+	}
+}  
