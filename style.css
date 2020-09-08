@@ -10,7 +10,7 @@
 
  *{
 	box-sizing: border-box;
-	/*border: 1px solid red; */
+	/* border: 1px solid red; */
     padding: 0; 
     margin: 0;
 } 
@@ -101,10 +101,6 @@ nav> span {
 	margin-top: 3px;
 }
 
-/*section>.container {    
-	/*margin: 20px auto; 
-} */
-
 nav> ul {
 	float: right;
     display: block;
@@ -185,10 +181,12 @@ nav a:hover {
 	height: 200px;
 	width: 200px; 
 } 
-.test {
-	justify-content: center;
- 	-webkit-justify-content: center;
+
+.flexbox {
+	justify-content: space-evenly;
+	 -webkit-justify-content: space-evenly;
 }
+
 .OMNIE h2 {
 	text-align: center;
 }
