@@ -5,11 +5,14 @@
     <title>Kasia Kowalska</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Beth+Ellen&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
+    <script type="text/javascript"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
  </head>
  <body>
@@ -20,8 +23,11 @@
     <div class="handle">
       <i class="fa fa-bars"></i>
     </div>
-		<ul class="new">
-			<li><a href="#WHY">Why</a></li>
+		<ul class="menu">
+      
+    
+      <!-- <li><a href="" data-scroll-to=".WHY">Why</a></li> -->
+      <li><a href="#WHY">Why</a></li> 
 			<li><a href="#OMNIE">About me</a></li>
       <li><a href="#STACK">My stack</a></li>
       <li><a href="#KONTAKT">Where</a></li>
@@ -30,55 +36,55 @@
 	</nav>
   </header>
   <section class="hero clearfix">
-  	 <div class="slogan flexbox">
+  	 <div class="slogan flexbox" data-aos="fade-up">
   		<h3>"JavaScript is easy when you do not know how, but very diffcult when you do."</h3>
   	 </div>
   </section>
-  <section class="WHY"><a name="WHY"></br></br></br><br><h1> WHY Coding?</h1></a>
+  <section class="WHY" data-aos="fade-up"><a name="WHY"></br></br></br><br><h1>WHY Coding?</h1></a>
     </br><div class="maszyna">
-            <h1>Because coding is the new writing.</h1>
-            <h1>Because when it does work it is an amazing feeling.<h1> 
-            <h1>Because software is eating the world.</h1>
+            <h1 data-aos="fade-up">Because coding is the new writing.</h1>
+            <h1 data-aos="fade-up">Because when it does work it is an amazing feeling.<h1> 
+            <h1 data-aos="fade-up">Because software is eating the world.</h1>
           </div></br></br></br></br>
   </section>
-  <section class="STACK"><br><br><a name="STACK"><h2>MY STACK</h2></a><br><br><br><br>        
+  <section class="STACK" data-aos="fade-up"><br><br><a name="STACK"><h2>MY STACK</h2></a><br><br><br><br>        
     <div class="row flexbox">
       <div class="col-2 flexbox">
         <div class="kwadrat">
-          <h3><img src="HTML_LOGO.jpeg" width="145" height="155"></h3> 
+          <h3><img src="HTML_LOGO.jpeg" width="145" height="155" data-aos="fade-up"></h3> 
         </div>
       </div>
       <div class="col-2 flexbox">
         <div class="kwadrat">
-          <h3><img src="CSS_LOGO.jpeg" width="130" height="143"></h3>
+          <h3><img src="CSS_LOGO.jpeg" width="130" height="143" data-aos="fade-up"></h3>
         </div>
       </div>
       <div class="col-2 flexbox">
         <div class="kwadrat">
-          <h3><img src="JS_LOGO.jpeg" width="115" height="153"></h3>
+          <h3><img src="JS_LOGO.jpeg" width="115" height="153" data-aos="fade-up"></h3>
         </div>
       </div>
     
       <div class="col-2 flexbox">
         <div class="kwadrat">
-          <h3><img src="NODE_LOGO.png" width="140" height="150"></h3> 
+          <h3><img src="NODE_LOGO.png" width="140" height="150" data-aos="fade-up"></h3> 
         </div>
       </div>
       <div class="col-2 flexbox">
         <div class="kwadrat">
-          <h3><img src="REACT_LOGO.jpeg" width="140" height="145"></h3>
+          <h3><img src="REACT_LOGO.jpeg" width="140" height="145" data-aos="fade-up"></h3>
         </div>
       </div>
     </div>
   </section><br><br>
-  <section class="OMNIE"><br><br><a name="OMNIE"><h2>ABOUT ME</h2></a><br><br><br><br>
+  <section class="OMNIE" data-aos="fade-up"><br><br><a name="OMNIE"><h2>ABOUT ME</h2></a><br><br><br><br>
     <div class="row"> 
         <div class="col-6">
           <div class="opis">After my first career in international trade and working for a subsidiary of Air Liquide, I decided to go back to my initial interest: coding. After an online front-end bootcamp and few other online courses, aware of the fact that the more I know the more I have to learn I’m eager to find a first professional opportunity that will allow me to grow further starting as a Junior Web Developer (front-end to start with but eventually full stack).
           </div>
         </div>
 
-        <div class="col-6 zdjecie">
+        <div class="col-6 zdjecie" data-aos="fade-up">
           <div class="portret"></div>
         </div>
     </div><br><br><br><br>
@@ -113,5 +119,7 @@
  <script src="https://code.jquery.com/jquery-2.1.4.min.js" type="text/javascript"></script>
  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
  <script src="script.js"></script>
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
  </body>
 </html>

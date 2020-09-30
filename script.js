@@ -4,8 +4,13 @@ $(document).ready(function(){
 		});
 });
 
-$(".new li a").on("click", function(){
+$(".menu li a").on("click", function(){
  	 $(".handle").click();
+});
+
+
+AOS.init({
+	duration: 1200,
 });
 
 
